@@ -1,0 +1,8 @@
+sum(N,F1,0):- F1>N,!. 
+sum(N,F,S):-
+	F1=F+2,  
+	sum(N,F1,S1), 
+	S is S1+F.
+
+p(N,S):-
+    sum(N,1,S).
