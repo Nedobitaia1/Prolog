@@ -1,0 +1,7 @@
+for(N,N):-
+    write(N).  
+for(I,N):-  
+  I<N,
+  write(I),  
+  I1 is (I+1), 
+  for(I1,N), !.
