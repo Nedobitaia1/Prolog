@@ -16,3 +16,6 @@ opr(X, Y, Z1):-
 p(X, Y, Z):-
     opr(X, Y, Z1),
     Z is (X*Y)/Z1.
+    
+ % ?- p(2,5,Z). Z=6
+ % ?- p(3,2,5). false
